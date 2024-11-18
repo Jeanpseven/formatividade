@@ -6,16 +6,14 @@ body {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center; /* Centraliza verticalmente */
-    background: url('sua-imagem-de-fundo.jpg') no-repeat center center fixed; /* Substitua pela sua imagem */
-    background-size: cover; /* Faz a imagem cobrir toda a tela */
-    position: relative;
+    background-color: purple; /* Cor de fundo suave */
 }
 
 .container {
     display: flex;
     flex-direction: column; /* Coloca os elementos em coluna */
     align-items: center; /* Centraliza horizontalmente */
-    position: relative; /* Para o efeito de desfoque */
+    width: 100%; /* Largura total */
 }
 
 form {
@@ -24,7 +22,6 @@ form {
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    backdrop-filter: blur(10px); /* Efeito de desfoque */
     margin-bottom: 20px; /* Espaço abaixo do formulário */
     width: 300px; /* Largura fixa para o formulário */
 }
@@ -49,22 +46,20 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    width: 100%; /* Botão ocupa toda a largura do formulário */
 }
 
 button:hover {
     background-color: #218838;
 }
 
-.botao {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-align: center;
+.link {
+    color: #007bff; /* Cor do texto do link */
+    text-decoration: none; /* Remove o sublinhado */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    margin-top: 10px; /* Espaço acima do link */
 }
 
-.botao:hover {
-    background-color: #0056b3;
+.link:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
